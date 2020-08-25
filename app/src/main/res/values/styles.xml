@@ -3,9 +3,9 @@
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/blue900</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/blue900</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:textColorHint">@color/blue900</item>
         <item name="android:textColor">@color/black</item>
     </style>
 

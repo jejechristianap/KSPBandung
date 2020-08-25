@@ -6,19 +6,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LoginActivity">
 
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/mpbLogin"
+        android:visibility="gone"
+        android:layout_below="@id/bLogin"
+        android:layout_width="wrap_content"
+        android:layout_alignStart="@id/bLogin"
+        android:layout_alignEnd="@id/bLogin"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/blue900"
+        android:indeterminate="true"
+        app:mpb_progressStyle="horizontal"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal" />
+
     <ImageView
         android:id="@+id/ivLogo"
         android:src="@drawable/login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_50sdp"
         android:layout_width="@dimen/_150sdp"
-        android:layout_height="@dimen/_150sdp"/>
+        android:layout_height="@dimen/_150sdp"
+        android:contentDescription="@string/image_login" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:text="@string/login_admin"
+        android:layout_below="@id/ivLogo"
+        android:textColor="@color/blue900"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_20ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilUsername"
-        android:layout_below="@id/ivLogo"
+        android:layout_below="@id/tv"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20sdp"
@@ -28,6 +52,7 @@
         android:hint="@string/username"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -45,6 +70,7 @@
         app:passwordToggleEnabled="true"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPassword"
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

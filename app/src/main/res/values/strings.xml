@@ -4,4 +4,6 @@
     <string name="label">Label</string>
     <string name="password">PASSWORD</string>
     <string name="login">LOGIN</string>
+    <string name="login_admin">Login Admin</string>
+    <string name="image_login">Image Login</string>
 </resources>
