@@ -2,17 +2,16 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/blue900</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
-    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight">
-        <!-- ... -->
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="SplashTheme" parent="AppTheme">
         <item name="android:windowBackground">#FFFFFF</item>
     </style>
+
 
 </resources>

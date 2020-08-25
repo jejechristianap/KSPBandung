@@ -2,4 +2,6 @@
     <string name="app_name">KSP Bandung</string>
     <string name="username">USERNAME</string>
     <string name="label">Label</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOGIN</string>
 </resources>
