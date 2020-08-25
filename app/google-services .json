@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "363483261830",
+    "firebase_url": "https://ksp-bandung.firebaseio.com",
+    "project_id": "ksp-bandung",
+    "storage_bucket": "ksp-bandung.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363483261830:android:a2449f7d52395934c91a07",
+        "android_client_info": {
+          "package_name": "com.minjem.kspbandung"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363483261830-4552b39btasp1vivnmfrj2n4bb8579bc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.minjem.kspbandung",
+            "certificate_hash": "b9a148af5dfd8688e3f42848b7aa7aa9aef19c87"
+          }
+        },
+        {
+          "client_id": "363483261830-3bf5rq25a8gulgnap6jpl906sii2j4mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvvNxPc-0pOz1H-vprunGf2MdNeIgBiKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363483261830-3bf5rq25a8gulgnap6jpl906sii2j4mj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
