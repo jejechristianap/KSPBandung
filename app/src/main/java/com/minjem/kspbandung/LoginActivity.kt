@@ -1,6 +1,8 @@
 package com.minjem.kspbandung
 
 import android.R.attr.password
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.util.Log
@@ -13,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 
 class LoginActivity : AppCompatActivity() {
+    @SuppressLint("LogNotTimber")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -58,7 +61,15 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+        val mAuth = FirebaseAuth.getInstance()
+        if (mAuth.currentUser != null){
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+    }
+
     private fun isEmpty(text: Editable) : Boolean{
-        return false
+        return text != null && text.length <= 5
     }
 }
