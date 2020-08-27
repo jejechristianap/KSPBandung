@@ -50,9 +50,11 @@
         android:layout_height="wrap_content"
         app:startIconDrawable="@drawable/ic_account_circle"
         android:hint="@string/username"
+        app:errorEnabled="true"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietUsername"
+            android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -60,7 +62,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPassword"
         android:layout_below="@id/tilUsername"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20sdp"
         app:startIconDrawable="@drawable/ic_lock"
@@ -68,6 +70,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/password"
         app:passwordToggleEnabled="true"
+        app:errorEnabled="true"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietPassword"
@@ -83,7 +86,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_20sdp"
-        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@id/tilPassword"
+        android:layout_alignEnd="@id/tilPassword"
         android:text="@string/login" />
 
 </RelativeLayout>
