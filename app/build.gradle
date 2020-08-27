@@ -57,9 +57,9 @@ dependencies {
 
     implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
 
+    /*Currency Edittext*/
+    implementation 'me.abhinay.input:currency-edittext:1.1'
 
-
-    implementation 'com.github.ajalt:timberkt:1.5.1'
 
 
 }
