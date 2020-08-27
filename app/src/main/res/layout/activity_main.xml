@@ -15,6 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <androidx.appcompat.widget.Toolbar
+                app:menu="@menu/menu"
                 android:id="@+id/toolbarMain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -24,25 +25,101 @@
                 android:theme="@style/ToolbarTheme"
                 app:layout_constraintTop_toTopOf="parent"/>
 
-            <ImageView
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/splash_logo"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="@dimen/_24sdp"/>
-            <ImageView
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_history"
-                android:layout_marginEnd="@dimen/_15sdp"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"/>
         </RelativeLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <ScrollView
+        android:id="@+id/sv"
+        android:background="@color/grey"
+        android:layout_below="@id/appbar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_margin="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/_18sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:text="@string/pengajuan_pinjaman"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"/>
+
+                    <!--<me.abhinay.input.CurrencyEditText
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"/>-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilJumlahPinjaman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        app:prefixTextColor="@color/black"
+                        app:prefixText="Rp"
+                        android:hint="@string/jumlah_pinjaman"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                        <me.abhinay.input.CurrencyEditText
+                            android:id="@+id/cetJumlahPinjaman"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:maxLines="7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilTenor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        app:prefixTextColor="@color/black"
+                        android:hint="@string/tenor"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                        <AutoCompleteTextView
+                            android:id="@+id/atvTenor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            tools:ignore="LabelFor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/bHitung"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/hitung"
+                        android:textAllCaps="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
     <Button
+        android:visibility="gone"
         android:id="@+id/bWrite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

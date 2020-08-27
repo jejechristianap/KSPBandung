@@ -6,4 +6,17 @@
     <string name="login">LOGIN</string>
     <string name="login_admin">Login Admin</string>
     <string name="image_login">Image Login</string>
+    <string name="riwayat_pinjaman">Riwayat Pinjaman</string>
+    <string name="logout">Logout</string>
+    <string name="jumlah_pinjaman">Jumlah Pinjaman</string>
+    <string name="min_pinjaman">Minimum pinjaman Rp500,000</string>
+    <string name="maks_pinjaman">Maksimum pinjaman Rp3,000,000</string>
+    <string name="pinjaman">Pinjaman</string>
+    <string name="pengajuan_pinjaman">Pengajuan Pinjaman</string>
+    <string name="tenor">Tenor</string>
+    <string name="hitung">Hitung</string>
+    <string name="biaya_admin">Biaya Admin</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="batal">Batal</string>
+
 </resources>
