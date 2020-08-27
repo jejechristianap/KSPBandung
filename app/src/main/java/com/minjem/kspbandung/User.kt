@@ -7,5 +7,8 @@ data class User (
     var alamat: String? = null,
     var tempatKerja: String? = null,
     var fotoKtp: String? = null,
-    var fotoSelfi: String? = null
+    var fotoSelfi: String? = null,
+    var jumlahPinjaman: String? = null,
+    var admin: String? = null,
+    var jumlahTerima: String? = null
 )
